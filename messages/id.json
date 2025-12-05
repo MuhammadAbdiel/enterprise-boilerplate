@@ -1,0 +1,32 @@
+{
+  "HomePage": {
+    "title": "Selamat Datang di Aplikasi Enterprise",
+    "subtitle": "Boilerplate standar dengan Next.js 15, Tailwind, dan Shadcn.",
+    "featuresTitle": "Fitur",
+    "featuresDesc": "Siap digunakan untuk aplikasi produksi."
+  },
+  "Feature": {
+    "AppRouter": "App Router",
+    "AppRouterDesc": "Dibangun di atas Next.js 15.",
+    "Tailwind": "Tailwind CSS v4",
+    "TailwindDesc": "Utility-first CSS.",
+    "TypeSafety": "Keamanan Tipe",
+    "TypeSafetyDesc": "TypeScript Ketat & Zod.",
+    "Shadcn": "Shadcn UI",
+    "ShadcnDesc": "Komponen yang dapat diakses."
+  },
+  "Common": {
+    "getStarted": "Mulai Sekarang",
+    "docs": "Dokumentasi",
+    "toggleTheme": "Ubah tema",
+    "light": "Terang",
+    "dark": "Gelap",
+    "system": "Sistem",
+    "language": "Bahasa"
+  },
+  "Articles": {
+    "title": "Artikel Terbaru",
+    "loading": "Memuat artikel...",
+    "readMore": "Baca Selengkapnya"
+  }
+}

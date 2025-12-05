@@ -1,0 +1,32 @@
+{
+  "HomePage": {
+    "title": "Welcome to Enterprise App",
+    "subtitle": "A standard boilerplate with Next.js 15, Tailwind, and Shadcn.",
+    "featuresTitle": "Features",
+    "featuresDesc": "Batteries included for production-ready apps."
+  },
+  "Feature": {
+    "AppRouter": "App Router",
+    "AppRouterDesc": "Built on Next.js 15.",
+    "Tailwind": "Tailwind CSS v4",
+    "TailwindDesc": "Utility-first CSS.",
+    "TypeSafety": "Type Safety",
+    "TypeSafetyDesc": "Strict TypeScript & Zod.",
+    "Shadcn": "Shadcn UI",
+    "ShadcnDesc": "Accessible components."
+  },
+  "Common": {
+    "getStarted": "Get Started",
+    "docs": "Documentation",
+    "toggleTheme": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "language": "Language"
+  },
+  "Articles": {
+    "title": "Latest Articles",
+    "loading": "Loading articles...",
+    "readMore": "Read More"
+  }
+}

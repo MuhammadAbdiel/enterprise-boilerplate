@@ -1,0 +1,32 @@
+{
+  "HomePage": {
+    "title": "エンタープライズアプリへようこそ",
+    "subtitle": "Next.js 15、Tailwind、Shadcnを使用した標準ボイラープレート。",
+    "featuresTitle": "特徴",
+    "featuresDesc": "本番環境対応のアプリに必要なものすべてが含まれています。"
+  },
+  "Feature": {
+    "AppRouter": "App Router",
+    "AppRouterDesc": "Next.js 15で構築。",
+    "Tailwind": "Tailwind CSS v4",
+    "TailwindDesc": "ユーティリティファーストCSS。",
+    "TypeSafety": "型安全性",
+    "TypeSafetyDesc": "厳密なTypeScriptとZod。",
+    "Shadcn": "Shadcn UI",
+    "ShadcnDesc": "アクセシブルなコンポーネント。"
+  },
+  "Common": {
+    "getStarted": "始める",
+    "docs": "ドキュメント",
+    "toggleTheme": "テーマの切り替え",
+    "light": "ライト",
+    "dark": "ダーク",
+    "system": "システム",
+    "language": "言語"
+  },
+  "Articles": {
+    "title": "最新記事",
+    "loading": "記事を読み込んでいます...",
+    "readMore": "続きを読む"
+  }
+}
