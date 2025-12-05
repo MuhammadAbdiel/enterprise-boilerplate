@@ -1,26 +1,26 @@
-import { create } from "zustand";
-import { devtools, persist } from "zustand/middleware";
+import { create } from 'zustand'
+import { devtools, persist } from 'zustand/middleware'
 
 interface User {
-  id: number;
-  name: string;
-  email: string;
-  username: string;
-  phone: string;
-  website: string;
+  id: number
+  name: string
+  email: string
+  username: string
+  phone: string
+  website: string
   company: {
-    name: string;
-  };
+    name: string
+  }
 }
 
 interface UserState {
-  users: User[];
-  selectedUser: User | null;
-  setUsers: (users: User[]) => void;
-  setSelectedUser: (user: User | null) => void;
-  addUser: (user: User) => void;
-  updateUser: (id: number, user: Partial<User>) => void;
-  deleteUser: (id: number) => void;
+  users: User[]
+  selectedUser: User | null
+  setUsers: (users: User[]) => void
+  setSelectedUser: (user: User | null) => void
+  addUser: (user: User) => void
+  updateUser: (id: number, user: Partial<User>) => void
+  deleteUser: (id: number) => void
 }
 
 export const useUserStore = create<UserState>()(
@@ -44,8 +44,8 @@ export const useUserStore = create<UserState>()(
           })),
       }),
       {
-        name: "user-storage",
+        name: 'user-storage',
       }
     )
   )
-);
+)

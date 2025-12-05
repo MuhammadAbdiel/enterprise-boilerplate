@@ -42,9 +42,12 @@ src/
 - **Localization (i18n)**: Built-in support for EN, ID, JP using `next-intl`.
 - **Theme Provider**: Dark mode support via `next-themes`.
 - **Sonner**: Stacked toast notifications.
-- **Axios**: Centralized HTTP client with interceptors. [📖 Guide](./AXIOS_GUIDE.md)
+- **Axios**: Centralized HTTP client with interceptors. [📖 Guide](./docs/AXIOS_GUIDE.md)
 - **TanStack Query**: Server state management with caching and mutations.
 - **Zustand**: Lightweight client state management with DevTools.
+- **Prettier**: Consistent code formatting with single quotes, no semicolons. [📖 Guide](./docs/FORMATTING_GUIDE.md)
+- **Vitest**: Fast unit testing with React Testing Library. [📖 Guide](./docs/TESTING_GUIDE.md)
+- **Playwright**: Cross-browser E2E testing.
 - **Strict TypeScript**: Type safety.
 - **ESLint**: Code quality.
 
@@ -81,6 +84,8 @@ src/
 ## Documentation
 
 - **[Axios Configuration Guide](./docs/AXIOS_GUIDE.md)** - HTTP client setup and usage
+- **[Code Formatting Guide](./docs/FORMATTING_GUIDE.md)** - Prettier rules and team guidelines
+- **[Testing Guide](./docs/TESTING_GUIDE.md)** - Unit and E2E testing with Vitest and Playwright
 - **[API Service Template](./src/services/example-api.template.ts)** - Template for creating new API services
 
 ## Pages

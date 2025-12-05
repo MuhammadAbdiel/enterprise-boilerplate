@@ -1,11 +1,11 @@
-"use client";
+'use client'
 
-import { useArticles } from "../hooks/use-articles";
-import { ArticleCard } from "./article-card";
-import { Skeleton } from "@/components/ui/skeleton";
+import { useArticles } from '../hooks/use-articles'
+import { ArticleCard } from './article-card'
+import { Skeleton } from '@/components/ui/skeleton'
 
 export function ArticleList() {
-  const { data: articles, isLoading, error } = useArticles();
+  const { data: articles, isLoading, error } = useArticles()
 
   if (isLoading) {
     return (
@@ -20,7 +20,7 @@ export function ArticleList() {
           </div>
         ))}
       </div>
-    );
+    )
   }
 
   if (error) {
@@ -28,7 +28,7 @@ export function ArticleList() {
       <div className="text-center text-red-500">
         Error loading articles: {error.message}
       </div>
-    );
+    )
   }
 
   return (
@@ -37,5 +37,5 @@ export function ArticleList() {
         <ArticleCard key={article.id} article={article} />
       ))}
     </div>
-  );
+  )
 }

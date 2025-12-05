@@ -1,13 +1,13 @@
-import { create } from "zustand";
-import { devtools } from "zustand/middleware";
+import { create } from 'zustand'
+import { devtools } from 'zustand/middleware'
 
 interface UIState {
-  isSidebarOpen: boolean;
-  isModalOpen: boolean;
-  modalContent: React.ReactNode | null;
-  toggleSidebar: () => void;
-  openModal: (content: React.ReactNode) => void;
-  closeModal: () => void;
+  isSidebarOpen: boolean
+  isModalOpen: boolean
+  modalContent: React.ReactNode | null
+  toggleSidebar: () => void
+  openModal: (content: React.ReactNode) => void
+  closeModal: () => void
 }
 
 export const useUIStore = create<UIState>()(
@@ -20,4 +20,4 @@ export const useUIStore = create<UIState>()(
     openModal: (content) => set({ isModalOpen: true, modalContent: content }),
     closeModal: () => set({ isModalOpen: false, modalContent: null }),
   }))
-);
+)

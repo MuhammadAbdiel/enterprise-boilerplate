@@ -1,27 +1,27 @@
-"use client";
+'use client'
 
-import { User } from "../types";
+import { User } from '../types'
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Mail, Phone, Globe, Trash2, Edit } from "lucide-react";
-import { useUserStore } from "@/stores/user-store";
+} from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Mail, Phone, Globe, Trash2, Edit } from 'lucide-react'
+import { useUserStore } from '@/stores/user-store'
 
 interface UserCardProps {
-  user: User;
-  onDelete: (id: number) => void;
+  user: User
+  onDelete: () => void
 }
 
 export function UserCard({ user, onDelete }: UserCardProps) {
-  const setSelectedUser = useUserStore((state) => state.setSelectedUser);
+  const setSelectedUser = useUserStore((state) => state.setSelectedUser)
 
   return (
-    <Card className="hover:shadow-lg transition-shadow">
+    <Card className="transition-shadow hover:shadow-lg">
       <CardHeader>
         <div className="flex items-start justify-between">
           <div>
@@ -36,34 +36,30 @@ export function UserCard({ user, onDelete }: UserCardProps) {
             >
               <Edit className="h-4 w-4" />
             </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => onDelete(user.id)}
-            >
-              <Trash2 className="h-4 w-4 text-destructive" />
+            <Button variant="ghost" size="icon" onClick={onDelete}>
+              <Trash2 className="text-destructive h-4 w-4" />
             </Button>
           </div>
         </div>
       </CardHeader>
       <CardContent className="space-y-2">
-        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+        <div className="text-muted-foreground flex items-center gap-2 text-sm">
           <Mail className="h-4 w-4" />
           <span>{user.email}</span>
         </div>
-        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+        <div className="text-muted-foreground flex items-center gap-2 text-sm">
           <Phone className="h-4 w-4" />
           <span>{user.phone}</span>
         </div>
-        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+        <div className="text-muted-foreground flex items-center gap-2 text-sm">
           <Globe className="h-4 w-4" />
           <span>{user.website}</span>
         </div>
-        <div className="mt-4 pt-4 border-t">
+        <div className="mt-4 border-t pt-4">
           <p className="text-sm font-medium">Company</p>
-          <p className="text-sm text-muted-foreground">{user.company.name}</p>
+          <p className="text-muted-foreground text-sm">{user.company.name}</p>
         </div>
       </CardContent>
     </Card>
-  );
+  )
 }

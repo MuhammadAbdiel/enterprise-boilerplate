@@ -1,16 +1,16 @@
-"use client";
+'use client'
 
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/button'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { Search, X, ArrowUpDown } from "lucide-react";
-import { useFilterStore } from "@/stores/filter-store";
+} from '@/components/ui/select'
+import { Search, X, ArrowUpDown } from 'lucide-react'
+import { useFilterStore } from '@/stores/filter-store'
 
 export function UserFilters() {
   const {
@@ -21,12 +21,12 @@ export function UserFilters() {
     setSortBy,
     setSortOrder,
     resetFilters,
-  } = useFilterStore();
+  } = useFilterStore()
 
   return (
-    <div className="flex flex-col md:flex-row gap-4 mb-6 p-4 bg-muted/50 rounded-lg">
-      <div className="flex-1 relative">
-        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+    <div className="bg-muted/50 mb-6 flex flex-col gap-4 rounded-lg p-4 md:flex-row">
+      <div className="relative flex-1">
+        <Search className="text-muted-foreground absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 transform" />
         <Input
           placeholder="Search users..."
           value={searchQuery}
@@ -50,16 +50,16 @@ export function UserFilters() {
         <Button
           variant="outline"
           size="icon"
-          onClick={() => setSortOrder(sortOrder === "asc" ? "desc" : "asc")}
+          onClick={() => setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc')}
         >
           <ArrowUpDown className="h-4 w-4" />
         </Button>
 
         <Button variant="outline" onClick={resetFilters}>
-          <X className="h-4 w-4 mr-2" />
+          <X className="mr-2 h-4 w-4" />
           Reset
         </Button>
       </div>
     </div>
-  );
+  )
 }
